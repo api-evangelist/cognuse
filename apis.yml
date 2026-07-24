@@ -1,7 +1,15 @@
 aid: cognuse
 name: Cognuse
-description: Cognuse is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Cognuse is a digital health company offering a comprehensive rehabilitation platform
+  for the continuum of care. Its CoNurse product is a guidelines adherence and management system
+  that empowers clinicians, caregivers, and family members across the ICU, inpatient rehabilitation,
+  and outpatient / chronic-disease-management settings. Capabilities include patient and family
+  ICU dashboards, interactive diagnostic and procedural content, therapy and virtual exercises,
+  actionable clinical-guideline creation and management, continuous patient education, automated
+  discharge documentation, an interactive day planner, and progress visualization and analytics.
+  Based in San Diego, California, and backed by 500 Global. This profile was surfaced from a VC
+  portfolio and enriched by the API Evangelist pipeline; Cognuse publishes a company/marketing
+  site but no public developer or API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/cognuse/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: http://cognuse.com/wp-content/uploads/2015/10/cognuse.png
 tags:
 - Company
+- Healthcare
+- Digital Health
+- Rehabilitation
+- Patient Engagement
+- Care Continuum
+- Clinical Guidelines
+- Chronic Disease Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cognuse-domain-security.yml
 - type: Website
-  url: https://cognuse.com
+  url: http://cognuse.com
+- type: Support
+  url: http://cognuse.com/contact-us/
+- type: Login
+  url: http://cognuse.com/login/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
